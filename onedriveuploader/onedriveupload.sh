@@ -22,7 +22,7 @@ function unrar(){
     mv downloads/*.rar downloads/GIRLS.rar;
     urar -x -p'mrcong.com' downloads/GIRLS.rar dowonload/pictures;
     rm -f downloads/GIRLS.rar;
-    LocalDIR="/root/downloads/pictures";
+    LocalDIR="/root/downloads/pictures/";
  fi
 }
 
