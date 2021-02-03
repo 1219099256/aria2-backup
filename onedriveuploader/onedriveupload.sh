@@ -20,7 +20,7 @@ function unrar(){
   if [ -e downloads/*.rar ];then
     mkdir /root/downloads/pictures;
     mv downloads/*.rar downloads/GIRLS.rar;
-    urar -x -p'mrcong.com' downloads/GIRLS.rar dowonload/pictures;
+    unrar -x -p'mrcong.com' downloads/GIRLS.rar dowonload/pictures;
     #rm -f downloads/GIRLS.rar;
     LocalDIR="/root/downloads/pictures/";
  fi
