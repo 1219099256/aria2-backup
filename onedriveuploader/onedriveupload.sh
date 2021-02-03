@@ -19,7 +19,7 @@ if [[ "$#" != '3' ]]; then exit 0; fi
 function unrar(){
   if [ -e downloads/*.rar ];then
     mv downloads/*.rar downloads/GIRLS.rar;
-    unrar x -p'mrcong.com' downloads/GIRLS.rar dowonload/pictures/;
+    unrar x -p'mrcong.com' downloads/GIRLS.rar dowonloads/pictures/;
     rm -f downloads/GIRLS.rar;
     LocalDIR="/root/downloads/pictures/";
  fi
