@@ -16,7 +16,7 @@ if [ -e /content/downloads/*.rar ];then
   LocalDIR="/content/downloads/pictures/"
   mkdir $LocalDIR;
   mv /content/downloads/*.rar /content/downloads/GIRLS.rar;
-  unrar x -p'mrcong.com' /content/downloads/GIRLS.rar &LocalDIR;
+  unrar x -p'mrcong.com' /content/downloads/GIRLS.rar $LocalDIR;
   rm -rf /content/downloads/GIRLS.rar;
 fi
 
