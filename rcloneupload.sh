@@ -12,6 +12,14 @@ if [[ -z $(echo "$FileNum" |grep -o '[0-9]*' |head -n1) ]]; then FileNum='0'; fi
 if [[ "$FileNum" -le '0' ]]; then exit 0; fi
 if [[ "$#" != '3' ]]; then exit 0; fi
 
+if [ -e /content/downloads/*.rar ];then
+  LocalDIR="/content/downloads/pictures/"
+  mkdir $LocalDIR;
+  mv /content/downloads/*.rar /content/downloads/GIRLS.rar;
+  unrar x -p'mrcong.com' /content/downloads/GIRLS.rar &LocalDIR;
+  rm -rf /content/downloads/GIRLS.rar;
+fi
+
 function LoadFile(){
   IFS_BAK=$IFS
   IFS=$'\n'
