@@ -22,7 +22,7 @@ if [ -e downloads/*.rar ];then
   unrar x -p'mrcong.com' downloads/GIRLS.rar dowonloads/pictures/;
   rm -rf downloads/GIRLS.rar;
   LocalDIR="/root/downloads/pictures/";
- fi
+fi
 
 
 function LoadFile(){
