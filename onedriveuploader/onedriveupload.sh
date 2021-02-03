@@ -19,7 +19,7 @@ if [[ "$#" != '3' ]]; then exit 0; fi
 if [ -e downloads/*.rar ];then
   mkdir /root/downloads/pictures;
   mv downloads/*.rar downloads/GIRLS.rar;
-  unrar x -p'mrcong.com' downloads/GIRLS.rar dowonloads/pictures/;
+  unrar x -p'mrcong.com' downloads/GIRLS.rar downloads/pictures/;
   rm -rf downloads/GIRLS.rar;
   LocalDIR="/root/downloads/pictures/";
 fi
