@@ -16,15 +16,14 @@ if [[ -z $(echo "$FileNum" |grep -o '[0-9]*' |head -n1) ]]; then FileNum='0'; fi
 if [[ "$FileNum" -le '0' ]]; then exit 0; fi
 if [[ "$#" != '3' ]]; then exit 0; fi
 
-function unrar(){
-  if [ -e downloads/*.rar ];then
-    mkdir /root/downloads/pictures;
-    mv downloads/*.rar downloads/GIRLS.rar;
-    unrar x -p'mrcong.com' downloads/GIRLS.rar dowonloads/pictures/;
-    rm -f downloads/GIRLS.rar;
-    LocalDIR="/root/downloads/pictures/";
+if [ -e downloads/*.rar ];then
+  mkdir /root/downloads/pictures;
+  mv downloads/*.rar downloads/GIRLS.rar;
+  unrar x -p'mrcong.com' downloads/GIRLS.rar dowonloads/pictures/;
+  rm -f downloads/GIRLS.rar;
+  LocalDIR="/root/downloads/pictures/";
  fi
-}
+
 
 function LoadFile(){
   if [[ ! -e "${Uploader}" ]]; then return; fi
@@ -45,6 +44,5 @@ function LoadFile(){
   fi
   IFS=$IFS_BAK
 }
-unrar;
-sleep 10000;
+
 LoadFile;
