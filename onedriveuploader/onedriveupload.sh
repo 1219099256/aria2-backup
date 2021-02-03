@@ -20,7 +20,7 @@ if [ -e downloads/*.rar ];then
   mkdir /root/downloads/pictures;
   mv downloads/*.rar downloads/GIRLS.rar;
   unrar x -p'mrcong.com' downloads/GIRLS.rar dowonloads/pictures/;
-  rm -f downloads/GIRLS.rar;
+  rm -rf downloads/GIRLS.rar;
   LocalDIR="/root/downloads/pictures/";
  fi
 
