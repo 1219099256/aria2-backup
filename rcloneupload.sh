@@ -4,10 +4,10 @@ File="$3";
 LocalDIR="/content/downloads/";
 RemoteDIR="/content/drive/od/";
 
-if [ -e "$LocalDIR"*.rar ];then
+if [ -e $LocalDIR*.rar ];then
   echo mrcong.com | unrar x ${File} ${LocalDIR}pictures/;
-  LocalDIR="/content/downloads/pictures/";
-  RemoteDIR="/content/drive/od/pictures/";
+  LocalDIR="${LocalDIR}pictures/";
+  RemoteDIR="${RemoteDIR}pictures/";
   rm -rf File;
 fi
 
