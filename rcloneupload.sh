@@ -5,7 +5,7 @@ LocalDIR="/content/downloads/";
 RemoteDIR="/content/drive/od/";
 
 if [ -e "$LocalDIR"*.rar ];then
-  echo mrcong.com | unrar x ${File} pictures/;
+  echo mrcong.com | unrar x ${File} ${LocalDIR}pictures/;
   LocalDIR="/content/downloads/pictures/";
   RemoteDIR="/content/drive/od/pictures/";
   rm -rf File;
