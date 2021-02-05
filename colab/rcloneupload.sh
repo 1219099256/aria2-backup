@@ -2,7 +2,7 @@
 
 File="$3";
 LocalDIR="/content/downloads/";
-RemoteDIR="/content/drive/od/";
+RemoteDIR="/content/drives/od/";
 
 if [ -e $LocalDIR*.rar ];then
   LocalDIR="${LocalDIR}pictures/";
