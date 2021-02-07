@@ -5,13 +5,13 @@ LocalDIR="/root/downloads/";
 RemoteDIR="/root/od/";
 
 if [ -e $LocalDIR*.rar ];then
-  LocalDIR="${LocalDIR}pictures/";
-  RemoteDIR="${RemoteDIR}pictures/";
   unrar -p"mrcong.com" x ${File} ${LocalDIR};
   rm -rf ${File};
+  File="${LocalDIR}pictures/";
+  RemoteDIR="${RemoteDIR}pictures/";
 fi
 
-rclone move "${LocalDIR}" "${RemoteDIR}"  --config rclone.conf;
+rclone move "${File}" "${RemoteDIR}"  --config rclone.conf;
 
 cat >> /root/upload.txt << EOF
 $3
