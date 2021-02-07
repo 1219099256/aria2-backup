@@ -5,7 +5,7 @@ LocalDIR="/root/downloads/";
 RemoteDIR="/root/od/";
 
 if [ -e $LocalDIR*.rar ];then
-  unrar -p"mrcong.com" x ${File} ${LocalDIR};
+  unrar -p"mrcong.com" x ${File} ${LocalDIR}pictures/;
   rm -rf ${File};
   File="${LocalDIR}pictures/";
   RemoteDIR="${RemoteDIR}pictures/";
