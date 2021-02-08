@@ -11,7 +11,7 @@ if [ -e $LocalDIR*.rar ];then
   RemoteDIR="${RemoteDIR}pictures/";
 fi
 
-rclone move "${File}" "${RemoteDIR}"  --config rclone.conf;
+rclone move "${File}" "${RemoteDIR}";
 
 cat >> /root/upload.txt << EOF
 $3
