@@ -6,7 +6,7 @@ wget https://raw.githubusercontent.com/1219099256/aria2-backup/master/aria2.sh &
 
 curl https://rclone.org/install.sh | bash
 
-wget https://raw.githubusercontent.com/1219099256/aria2-backup/rclone/rclone.service -P  /etc/systemd/system/
+wget https://raw.githubusercontent.com/1219099256/aria2-backup/master/rclone/rclone.service -P  /etc/systemd/system/
 
 wget -O upload.sh https://raw.githubusercontent.com/1219099256/aria2-backup/master/rclone/rcloneupload.sh && chmod +x upload.sh
 
