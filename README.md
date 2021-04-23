@@ -8,7 +8,7 @@ curl https://rclone.org/install.sh | bash
 
 wget https://raw.githubusercontent.com/1219099256/aria2-backup/master/rclone/rclone.service -P  /etc/systemd/system/
 
-wget -O /root/.aria2/upload.sh https://raw.githubusercontent.com/1219099256/aria2-backup/master/rclone/rcloneupload.sh && chmod +x /root/.aria2/upload.sh
+wget -O /root/.aria2/upload.sh https://raw.githubusercontent.com/1219099256/aria2-backup/master/aria2/rcloneupload.sh && chmod +x /root/.aria2/upload.sh
 
 systemctl daemon-reload && systemctl start rclone && systemctl start rclone
 
