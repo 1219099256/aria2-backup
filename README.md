@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/1219099256/aria2-backup/master/rclone/rcl
 
 wget -O /root/.aria2/upload.sh https://raw.githubusercontent.com/1219099256/aria2-backup/master/aria2/rcloneupload.sh && chmod +x /root/.aria2/upload.sh
 
-systemctl daemon-reload && systemctl start rclone && systemctl start rclone
+systemctl daemon-reload && systemctl start rclone && systemctl enable rclone
 
 ### onedriveuploader
 
